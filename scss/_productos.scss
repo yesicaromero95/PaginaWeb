@@ -1,0 +1,39 @@
+.contenedor{
+    .mainProductos{
+        display: flex;
+        display: grid;
+        background-color: $blanco;
+        opacity: .9;
+        border-radius: 40px;
+        grid-template-rows: 0.75fr 4fr;
+        grid-template-areas: 
+        "titulo"
+        "galeriaDeImagenes";
+    }
+    .titulo{
+        background-color: $verde;
+        text-align: center;
+        border-radius: 40px;
+        grid-area: titulo;
+        h1{
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .galeriaDeImagenes{
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 525px;
+        grid-area: galeriaDeImagenes;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+        .card-text{
+            color: $verde;
+            font-size: 30px;
+        }
+    }
+} 

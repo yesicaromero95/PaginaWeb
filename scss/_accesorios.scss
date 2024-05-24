@@ -1,0 +1,40 @@
+.contenedor{
+   .mainAccesorios{
+        display: flex;
+        display: grid;
+        background-color: $blanco;
+        opacity: .9;
+        border-radius: 40px;
+        grid-template-rows: 0.75fr 4fr;
+        grid-template-areas: 
+            "tituloAccesorios"
+            "imagenesDeAccesorios";
+    }
+    .tituloAccesorios{
+        background-color: $verde;
+        border-radius: 40px;
+        text-align: center;
+        grid-area: tituloAccesorios;
+        h1{
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }    
+    .imagenesDeAccesorios{
+        justify-self: center;
+        align-self: center;
+        width: 400px;
+        height: 525px;
+        grid-area: imagenesDeAccesorios;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+        .card-text{
+            color: $verde;
+            font-size: 30px;
+        }
+    }
+    
+}

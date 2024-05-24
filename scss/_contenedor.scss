@@ -1,0 +1,10 @@
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid ;
+    grid-template-rows: 1fr 5fr 0.75fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}

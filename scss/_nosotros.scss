@@ -1,0 +1,37 @@
+.contenedor{
+    .mainNosotros{
+        display: flex;
+        display: grid;
+        background-color: $gris;
+        opacity: .9;
+        border-radius: 40px;
+        grid-template-rows: 0.75fr 4.50fr;
+        grid-template-areas: 
+        "tituloNosotros"
+        "parrafo";
+    }
+    .tituloNosotros{
+        background-color: $verde;
+        text-align: center;
+        border-radius: 40px;
+        grid-area: tituloNosotros;
+        h1{
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .parrafo{
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        background-color: $gris;
+        font-size: 30px;
+        padding: 50px; 
+    }
+    .imagenNosotros{
+        margin: 5px;
+        padding: 5px;
+    } 
+}
